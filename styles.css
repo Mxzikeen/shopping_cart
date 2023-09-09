@@ -1,0 +1,111 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+body{
+  height: 100vh;
+}
+.container, .navbar{
+  align-items: center;
+  margin: 0 auto;
+  text-align: center;
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(17, 25, 40, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  padding: 38px;
+  filter: drop-shadow(0 30px 10px rgba(0, 0, 0, 0.125));
+  background: linear-gradient(
+    45deg,
+    rgba(0, 212, 255, 1) 0%,
+    rgba(11, 3, 45, 1) 100%
+  )
+}
+.navbar ul{
+  list-style-type: none;
+  display: inline-flex;
+  
+}
+.navbar li{
+  margin: 50px;
+}
+.cart {
+  text-align: center;
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(17, 25, 40, 0.25);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  filter: drop-shadow(0 30px 10px rgba(0, 0, 0, 0.125));
+  float: left;
+  margin: 20px;
+  width: 20%;
+  min-height: 40%;
+  display: flex; /* Usar flexbox para el diseño */
+  flex-direction: column; /* Apilar elementos verticalmente */
+}
+
+/* Estilos para la lista de productos */
+#list {
+  flex-grow: 1; /* Hacer que la lista de productos crezca y llene el espacio restante */
+}
+.message{
+  margin-bottom: 20px;
+}
+/* Estilos para el contenedor del botón de Checkout */
+.checkout-container {
+  text-align: center; /* Alinear el texto del botón al centro */
+  margin-bottom: 20px; /* Espacio superior para separar el botón de la lista de productos */
+}
+
+.cartProducts {
+  list-style-type: none;
+  text-align: center;
+  align-items: center;
+  margin-top: 20px;
+}
+img{
+  max-width: 280px;
+}
+.products{
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(17, 25, 40, 0.25);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  filter: drop-shadow(0 30px 10px rgba(0, 0, 0, 0.125));
+  
+  display: inline-flex;
+  max-width: 50%;
+  text-align: center;
+  justify-content: space-evenly;
+  height: 40%;
+  margin-top: 20px;
+  margin: 20px;
+  
+}
+.btn {
+  border: none;
+  padding: 12px 24px;
+  border-radius: 24px;
+  font-size: 12px;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+.fill {
+  background: rgba(0, 212, 255, 0.9);
+  color: rgba(255, 255, 255, 0.95);
+  filter: drop-shadow(0);
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.fill:hover {
+  transform: scale(1.125);
+  border-color: rgba(255, 255, 255, 0.9);
+  filter: drop-shadow(0 10px 5px rgba(0, 0, 0, 0.125));
+  transition: all 0.3s ease;
+}
